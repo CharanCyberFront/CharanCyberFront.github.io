@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Work Experience Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        .dropdown {
+            margin-bottom: 20px;
+        }
+        .dropdown button {
+            /* background-color: #007BFF; */
+            background-color: #f9f9f9;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .dropdown button:hover {
+            background-color: #0056b3;
+        }
+        .dropdown button::after {
+            content: '\25BC'; /* Downward arrow */
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        .dropdown-content .tile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown-content .tile img {
+            width: 60px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .dropdown-content .tile h3 {
+            margin: 0 0 5px;
+        }
+        .dropdown-content .tile li {
+            margin-bottom: 5px;
+        }
+    </style>
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+
+        window.onload = function() {
+            const workExperience = document.getElementById('work-experience');
+            if (workExperience) {
+                workExperience.style.display = 'block';
+            }
+        };
+    </script>
+</head>
+<body class="generic-page">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Reference Cursive Font -->
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">SriCharanGurramkonda</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="active"><a href="experience.html">Experience</a></li>
+                <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <section class="post">
+                <header class="major">
+                    <h1>Experience</h1>
+                </header>
+
+                <!-- Internship/Work Experience Dropdown -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('work-experience')">Internship/Work Experience</button>
+                    <div id="work-experience" class="dropdown-content">
+                        <!-- Polaris Section -->
+                        <div class="tile">
+                            <img src="images/PolarisLogo.png" alt="Polaris Logo">
+                            <div>
+                                <h3>Information Security Intern</h3>
+                                <p>Polaris Inc. | May 2024 – Aug 2024</p>
+                                <li>Managed KnowBe4 Security Awareness Training for over 8,000 employees.</li>
+                                <li>Enforced CrowdStrike identity access policies to secure RDP access.</li>
+                                <li>Automated Active Directory group user retrieval with PowerShell scripts.</li>
+                            </div>
+                        </div>
+
+                        <!-- UnitedHealth Group Section 1 -->
+                        <div class="tile">
+                            <img src="images/UnitedHealthGroupLogo.png" alt="UnitedHealth Group Logo">
+                            <div>
+                                <h3>Technology Development Intern</h3>
+                                <p>UnitedHealth Group | Jun 2023 – Aug 2023</p>
+                                <li>Enhanced financial transaction capabilities for 17,000+ suppliers.</li>
+                                <li>Implemented real-time alerts for monitoring high-risk admin actions.</li>
+                                <li>Automated the processing of 5+ million invoices to improve supplier self-service.</li>
+                            </div>
+                        </div>
+
+                        <!-- UnitedHealth Group Section 2 -->
+                        <div class="tile">
+                            <img src="images/UnitedHealthGroupLogo.png" alt="UnitedHealth Group Logo">
+                            <div>
+                                <h3>Technology Development Intern</h3>
+                                <p>UnitedHealth Group | Jun 2022 – Aug 2022</p>
+                                <li>
+                                    Streamlined the file transfer process by automating the movement of over 1,000+. 
+                                </li>
+                                <li>
+                                    Led a team of 6 in a hackathon to develop a tool automating medication administration. <br /> 
+                                </li>
+                            </div>                            
+                        </div>
+
+                        <!-- ACT Junior Genius Section -->
+                        <div class="tile">
+                            <img src="images/JuniorGeniusLogo.png" alt="ACT Junior Genius Logo">
+                            <div>
+                                <h3>Head Teaching Assistant</h3>
+                                <p>Junior Genius | Jun 2022 – Aug 2022</p>
+                                <li>Resolved testing issues across multiple sections.</li>
+                                <li>Provided administrative support, elevating student scores.</li>
+                                <li>Facilitated prep sessions with mock time trials and collaborative activities.</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership Experience Dropdown -->
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('leadership-experience')">Club Experience</button>
+                    <div id="leadership-experience" class="dropdown-content">
+                        <div class="tile">
+                            <img src="images/ISUCardinal.png" alt="ISU Logo">
+                            <div>
+                                <h3>Vice President of Events</h3>
+                                <p>Engineering Student Council | Sep 2022 – May 2024</p>
+                                <li>Organized 25+ events, attracting hundreds of attendees and fostering community.</li>
+                                <li>Facilitated networking with faculty, peers, and professionals through event leadership.</li>
+                                <li>Promoted engagement and inclusivity, strengthening the engineering community.</li>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <img src="images/ISUCardinal.png" alt="ISU Logo">
+                            <div>
+                                <h3>Club Member</h3>
+                                <p>Hacking and Cyber Security Club | Feb 2023 – Nov 2024</p>
+                                <li>Weekly sessions on secure coding, firewalls, and social engineering through CTFs.</li>
+                                <li>Achieved 1st place (Spring 2024) and 2nd place (Fall 2024) in Iowa State CDCs.</li>
+                                <li>Enhanced cybersecurity skills through collaboration with peers and industry experts.</li>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <img src="images/Amazon.png" alt="Amazon Logo">
+                            <div>
+                                <h3>STEM Science Crafts Facilitator</h3>
+                                <p>Amazon | May 2021 – Aug 2021</p>
+                                <li>Led 8 STEM projects for ages 5-13 through interactive science experiments.</li>
+                                <li>Boosted enrollment by coordinating digital outreach, engaging 15 Amazon families.</li>
+                                <li>Delivered 10+ presentations, showcasing leadership, collaboration, and technical expertise.</li>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <img src="images/NAESC.png" alt="NAESC Logo">
+                            <div>
+                                <h3>Midwest Recruitment Coordinator</h3>
+                                <p>NAESC | May 2022 – May 2023</p>
+                                <li>Worked with the National Administration Coordinator to keep regional information updated.</li>
+                                <li>Continually sought and managed community projects sponsored by NAESC, Inc.</li>
+                                <li>Promoted the Midwest Region to all accredited Engineering schools within the nation.</li>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <img src="images/IBM.png" alt="IBM Logo">
+                            <div>
+                                <h3>Scholar, Quantum Computing</h3>
+                                <p>IBM | Nov 2021 – Apr 2022</p>
+                                <li>Obtained scholarship from IBM through a selective process.</li>
+                                <li>Delved into the basics of Quantum Computing:, Gates, Bloch Spheres, and Matrices.</li>
+                                <li>Learned Qiksit, a library of Python, and applied knowledge toward Cryptography.</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div id="copyright">
+            <ul><li>&copy; Made With ❤️ By Charan Gurramkonda</li><li>
+        </div>
+    </div>
+</body>
+</html>

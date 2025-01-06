@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="generic-page">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+			<!-- Reference Cursive Font -->
+			<!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> -->
+			<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">SriCharanGurramkonda</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li class="active"><a href="projects.html">Projects</a></li>
+					<li><a href="experience.html">Experience</a></li>
+					<li><a href="contactme.html">Contact Me</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+						<!-- Projects -->
+						<header class="major">
+							<h1>My Projects</h1>
+						</header>
+						<div class="projects-section">
+							<!-- Row 1 -->
+							<div class="project-row">
+								<!-- GIAC Foundational Cybersecurity Technologies (GFACT) -->
+								<a href="https://github.com/CharanCyberFront/CharanCyberFront" target="_blank" class="project-tile">
+									<div>
+										<div class="project-image-row">
+											<!-- <img src="images/Me!.png" alt="Organization 1" /> -->
+											<img src="images/ProjectImgs/Sentinel.png" alt="Logo 1" />
+											<img src="images/ProjectImgs/Azure.png" alt="Logo 2" />
+										</div>
+										<h3>Custom SIEM</h3>
+										<p>A security homelab featuring an Azure Sentinel SIEM solution, designed for in-depth log analysis and proactive incident detection.</p>
+										<div class="organization-text">Role: Founder</div>
+									</div>
+								</a>
+
+								<!-- CyberStart America Scholar -->
+								<a href="https://github.com/CharanCyberFront/CyEscape_Game" target="_blank" class="project-tile">
+									<div>
+										<div class="project-image-row">
+											<!-- <img src="images/ISU.png" alt="Organization 1" />
+											<img src="images/AllState.png" alt="Organization 2" /> -->
+											<img src="images/ProjectImgs/Unity.png" alt="Logo 1" />
+											<img src="images/ProjectImgs/CSharp.png" alt="Logo 2" />
+											<img src="images/ProjectImgs/KRITA.png" alt="Logo 2" />
+										</div>
+										<h3>CyEscape Security Game</h3>
+										<p>A 2D game built in Unity Game Engine focusing on teaching OWASP Top 10 concepts to raise security awareness for software developers.</p>
+										<div class="organization-text">Role: Project Lead</div>
+									</div>
+								</a>
+							</div>
+
+							<!-- Row 2 -->
+							<div class="project-row">
+								<!-- Play It Safe: Manage Security Risks -->
+								<a href="https://github.com/CharanCyberFront/Moby_Dock" target="_blank" class="project-tile">
+									<div>
+										<div class="project-image-row">
+											<!-- <img src="images/ISU.png" alt="Organization 1" /> -->
+											<img src="images/Python.png" alt="Logo 1" />
+											<img src="images/ProjectImgs/C_Programming_Language.png" alt="Logo 2" />
+										</div>
+										<h3>Moby Dock</h3>
+										<p>An autonomous navigation system with a mapping GUI for Moby (Roomba), designed to seamlessly navigate and dock in a built course.</p>
+										<div class="organization-text">Role: Software Developer</div>
+									</div>
+								</a>
+
+								<!-- Foundations of Cybersecurity -->
+								<a href="https://github.com/CharanCyberFront/MyPortfolio" target="_blank" class="project-tile">
+									<div>
+										<div class="project-image-row">
+											<!-- <img src="images/Me!.png" alt="Organization 1" /> -->
+											<img src="images/ProjectImgs/HTML.png" alt="Logo 1" />
+											<img src="images/ProjectImgs/CSS.png" alt="Logo 2" />
+										</div>
+										<h3>My Portfolio</h3>
+										<p>A personal portfolio showcasing my cybersecurity projects, education, work experience, and more, built using modern web tech (HTMl/CSS).</p>
+										<div class="organization-text">Role: Founder</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!-- Project Tile Formatting -->
+						<style>
+							.project-image-row {
+								display: flex;
+								justify-content: center; /* Center align the images */
+								gap: 10px; /* Add spacing between images */
+								margin-top: 10px;
+							}
+
+							.project-image-row img {
+								width: 50px; /* Adjust the size of the images */
+								height: auto; /* Maintain aspect ratio */
+								border-radius: 8px; /* Optional: Add rounded corners */
+								transition: transform 0.2s ease; /* Optional: Hover effect */
+							}
+
+							.project-image-row img:hover {
+								transform: scale(1.1); /* Slightly enlarge on hover */
+							}
+
+							.projects-section {
+								display: flex;
+								flex-direction: column;
+								gap: 2rem;
+								margin-top: 2rem;
+								align-items: center;
+							}
+
+							.project-row {
+								display: flex;
+								flex-direction: column;
+								gap: 1.5rem;
+								width: 100%;
+								max-width: 600px;
+							}
+
+							.project-tile {
+								position: relative; /* Needed to position the text within the tile */
+								background-color: #D4F1F4;
+								border: 1px solid #ddd;
+								border-radius: 8px;
+								box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+								text-decoration: none;
+								color: inherit;
+								padding: 1.5rem;
+								text-align: center;
+								transition: transform 0.2s ease, box-shadow 0.2s ease;
+							}
+
+							.project-tile:hover {
+								transform: scale(1.05);
+								box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+							}
+
+							.project-tile img {
+								max-width: 80px;
+								margin-bottom: 1rem;
+							}
+
+							.project-tile h3 {
+								font-size: 1.2rem;
+								margin-bottom: 0.5rem;
+								color: #00274d;
+								line-height: 1.5;
+							}
+
+							.project-tile p {
+								font-size: 1rem;
+								color: #666666;
+								line-height: 1.5;
+								margin: 0;
+							}
+
+							.organization-text {
+								position: absolute;
+								top: 10px;
+								left: 10px;
+								font-size: 0.9rem;
+								color: #444444;
+								background: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background */
+								padding: 2px 5px;
+								border-radius: 4px; /* Optional: Add rounded corners */
+								text-align: left;
+								box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for emphasis */
+							}
+						</style>	
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Made With ❤️ By Charan Gurramkonda</li><li>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
